@@ -8,9 +8,14 @@ public class Prob1 {
 		Scanner scanner = new Scanner( System.in );
 		System.out.print( "문자열을 입력하세요:" );
 		
-		String s = scanner.next();
+		String s = scanner.nextLine();
 		
 		/*  구현합니다. */
+		String sCopy = s.toUpperCase();
+
+		for(int i=0; i<sCopy.length()+1;i++){
+			System.out.println(sCopy.substring(0,i));
+		}
 		
 	}
 
